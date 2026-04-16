@@ -2,6 +2,7 @@
 // 🔧 CONFIG (HIER EDITIEREN)
 //////////////////////////////
 
+
 const CONFIG = {
   studiengaenge: ["W2"],
 

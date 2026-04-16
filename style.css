@@ -1,0 +1,38 @@
+
+body { font-family: Arial; padding: 20px;}
+
+label {
+display: grid;
+grid-template-columns: 120px 300px;
+align-items: center;
+margin-top: 10px;
+}
+
+input, select {
+padding: 6px;
+width: 100%;
+box-sizing: border-box;
+}
+
+.hint {
+grid-column: 2;
+font-size: 12px;
+color: gray;
+margin-top: 2px;
+}
+
+#output {
+margin-top: 15px;
+font-weight: bold;
+width: 320px;
+}
+
+button {
+width: 320px;
+margin-top: 10px;
+padding: 6px 10px;
+}
+
+.big {
+font-size: 20px;
+}
