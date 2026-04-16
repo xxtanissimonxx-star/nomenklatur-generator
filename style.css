@@ -3,7 +3,7 @@ body { font-family: Arial; padding: 20px;}
 
 label {
 display: grid;
-grid-template-columns: 120px 300px;
+grid-template-columns: 150px 300px;
 align-items: center;
 margin-top: 10px;
 }
