@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Nomenklatur Generator</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<h3>Nomenklatur Generator</h3>
+
+<label>
+  <span>Semester:</span>
+  <input type="text" id="semester" value="26s">
+  <div class="hint">Format: Jahr + s (Sommer) oder w (Winter)</div>
+</label>
+
+<label>
+  <span>Studiengang:</span>
+  <select id="Studiengang_gruppe"></select>
+</label>
+
+<label>
+  <span>Laborgruppe:</span>
+  <select id="gruppe"></select>
+  <div class="hint">EX = Wiederholer und andere Personen</div>
+</label>
+
+<label>
+  <span>Listennummer:</span>
+  <input type="number" id="liste" min="1" max="99" value="1">
+  <div class="hint">Teilnehmernummer in deiner Gruppe</div>
+</label>
+
+<label>
+  <span>Aufgabe:</span>
+  <select id="aufgabe"></select>
+</label>
+
+<label>
+  <span>Bauteil:</span>
+  <input type="number" id="teil" min="0" max="9" value="0">
+</label>
+
+<label>
+  <span>Version:</span>
+  <input type="text" id="version" value="A">
+  <div class="hint">
+    Nach erster Änderung wird ein Buchstabe angefügt.<br>
+    A = Abgabe<br>
+    B = 1. Änderung<br>
+    C, ...
+  </div>
+</label>
+
+<button onclick="generieren()">Erstellen</button>
+
+<br><br><br>
+
+<div>
+  <label class="big">Output:</label>
+  <input type="text" id="output" readonly>
+  <br>
+  <button onclick="kopieren()">Kopieren</button>
+  <span id="copyStatus" style="margin-left:10px; color:green;"></span>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
