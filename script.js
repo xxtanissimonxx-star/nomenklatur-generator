@@ -6,7 +6,7 @@
 const CONFIG = {
   studiengaenge: ["W2"],
 
-  gruppen: ["A2","A1","B3","B4","C5","C6","D7","EX"],
+  gruppen: ["A1","A2","A3","B3","B4","C5","C6","EX"],
 
   aufgaben: [
     { value: "00", text: "Hausaufgabe" },
