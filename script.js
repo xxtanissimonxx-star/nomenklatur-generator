@@ -103,10 +103,3 @@ window.onload = function() {
   fillSorted("gruppe", CONFIG.gruppen);
   fillAufgaben();
 };
-
-
-window.onload = function() {
-  fillSorted("Studiengang_gruppe", CONFIG.studiengaenge);
-  fillSorted("gruppe", CONFIG.gruppen);
-  fillAufgaben();
-};
