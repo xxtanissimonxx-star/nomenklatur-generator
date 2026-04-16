@@ -9,6 +9,7 @@ const CONFIG = {
   gruppen: ["A2","A1","B3","B4","C5","C6","D7","EX"],
 
   aufgaben: [
+    { value: "00", text: "Hausaufgabe" },
     { value: "01", text: "1. Normschrift" },
     { value: "02", text: "2. Klauenkupplung" },
     { value: "03", text: "3. Zentrierteil" },
@@ -53,20 +54,23 @@ function pad(num) {
 function generieren() {
   let s = document.getElementById("semester").value;
   let st = document.getElementById("Studiengang_gruppe").value;
-  let g = document.getElementById("gruppe").value;
-  let l = pad(document.getElementById("liste").value);
-  let a = document.getElementById("aufgabe").value;
-  let t = pad(document.getElementById("teil").value);
-  let v = document.getElementById("version").value.trim().toUpperCase();
+  let gr = document.getElementById("gruppe").value;
+  let ln = pad(document.getElementById("liste").value);
+  let au = document.getElementById("aufgabe").value;
+  let tn = pad(document.getElementById("teil").value);
+  let ä = document.getElementById("version").value.trim().toUpperCase();
 
-  if (a === "01" || a === "02") {
-    t = "00";
-  }
+  // 26s-W2 
+  // gr → Laborgruppe
+  // ln → Listennummer
+  // au → Aufgabennummer
+  // tn → Teilnummer / Semesterwoche
+  // ä → Änderungsversion
 
-  let name = `${s}-${st}${g}-${l}-${a}${t}`;
+  let name = `${s}-${st}${gr}-${ln}-${au}${tn}`;
 
-  if (v !== "") {
-    name += `-${v}`;
+  if (ä !== "") {
+    name += `-${ä}`;
   }
 
   document.getElementById("output").value = name;
