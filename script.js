@@ -23,11 +23,6 @@ const CONFIG = {
 
 
 
-
-
-
-
-
 function fillSorted(selectId, array) {
   let sorted = [...new Set(array)].sort();
   let select = document.getElementById(selectId);
@@ -92,11 +87,6 @@ function kopieren() {
 //////////////////////////////
 // 🔧 INIT
 //////////////////////////////
-
-fillSorted("Studiengang_gruppe", CONFIG.studiengaenge);
-fillSorted("gruppe", CONFIG.gruppen);
-fillAufgaben();
-
 
 window.onload = function() {
   fillSorted("Studiengang_gruppe", CONFIG.studiengaenge);
